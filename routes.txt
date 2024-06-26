@@ -1,0 +1,56 @@
+user-create acc-  
+http://localhost:5000/api/v1/user/signup
+{
+    "name": "Siddhartha Mukherjee",
+    "email": "siddharthamukherjee0709@gmail.com",
+    "phone": 6289368650,
+    "password": "sidd12345"
+}
+
+user-login acc-
+http://localhost:5000/api/v1/user/login
+{
+    "email": "siddharthamukherjee0709@gmail.com",
+    "password": "sidd12345"
+}
+
+user-findneardriver
+http://localhost:5000/api/v1/user/findneardriver
+{
+    "latitude": 22.725943,
+    "longitude": 88.4717609
+}
+
+user-requestdriver
+http://localhost:5000/api/v1/user/requestdriver
+{
+    "email": "ayan.m086@gmail.com",
+    "latitude": 22.825943,
+    "longitude": 88.9717609
+}
+
+driver-create acc-
+http://localhost:5000/api/v1/driver/signup
+{
+    "email": "siddharthamukherjee0709@gmail.com",
+    "password": "sidd12345",
+    "phone": 9051618458,
+    "carNumber": "WB 26 C 2555",
+    "name": "Ayan Mukherjee"
+}
+
+driver-login acc-
+http://localhost:5000/api/v1/driver/login
+{
+    "email": "siddharthamukherjee0709@gmail.com",
+    "password": "sidd12345"
+}
+
+driver-sendlocation-
+http://localhost:5000/api/v1/driver/sendlocation
+{
+    "email": "siddharthamukherjee0709@gmail.com",
+    "latitude": 22.725943,
+    "longitude": 88.4717609
+}
+
